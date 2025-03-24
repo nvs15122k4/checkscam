@@ -1,0 +1,33 @@
+{% extends 'gr1/base.html' %}
+
+{% block main_content %}
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+    <div class="card p-4 shadow-lg" style="width: 400px; border: 2px solid #198754;">
+        <h3 class="text-center text-success fw-bold">📝 Đăng ký tài khoản</h3>
+        <hr>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label fw-bold">👤 Tên tài khoản</label>
+                <input type="text" name="username" class="form-control shadow-sm" placeholder="Nhập tên tài khoản" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">📧 Email</label>
+                <input type="email" name="email" class="form-control shadow-sm" placeholder="Nhập email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">🔒 Mật khẩu</label>
+                <input type="password" name="password1" class="form-control shadow-sm" placeholder="Nhập mật khẩu" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">🔒 Xác nhận mật khẩu</label>
+                <input type="password" name="password2" class="form-control shadow-sm" placeholder="Nhập lại mật khẩu" required>
+            </div>
+            <button type="submit" class="btn btn-success fw-bold w-100">✅ Đăng ký ngay</button>
+        </form>
+        <p class="text-center mt-3">
+            🔄 Đã có tài khoản? <a href="{% url 'login' %}" class="fw-bold text-success">Đăng nhập ngay!</a>
+        </p>
+    </div>
+</div>
+{% endblock main_content %}

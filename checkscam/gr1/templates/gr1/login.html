@@ -1,0 +1,25 @@
+{% extends 'gr1/base.html' %}
+
+{% block main_content %}
+</div>
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+    <div class="card p-4 shadow-lg" style="width: 350px;">
+        <h3 class="text-center">🔑 Đăng nhập</h3>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label">📧 Tài Khoản</label>
+                <input type="text" name="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">🔒 Mật khẩu</label>
+                <input type="password" name="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">🚀 Vào!!</button>
+        </form>
+        <p class="text-center mt-3">
+            Chưa tạo tài khoản hả ní? 🐧<br><a href="{% url 'register' %}">Đăng ký ngay ⁉️</a>
+        </p>
+    </div>
+</div>
+{% endblock main_content %}

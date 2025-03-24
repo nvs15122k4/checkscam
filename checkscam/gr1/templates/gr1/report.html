@@ -1,0 +1,33 @@
+{% extends 'gr1/base.html' %}
+
+{% block main_content %}
+<div class="container d-flex justify-content-center align-items-center" style="height: 80vh;">
+    <div class="card p-4 shadow-lg" style="width: 500px; background-color: #fff; border: 2px solid #ffc107;">
+        <h4 class="text-center mb-3 text-warning fw-bold">📢 Tố cáo lừa đảo</h4>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label class="form-label fw-bold">👤 Tên kẻ lừa đảo</label>
+                <input type="text" name="name_scam" class="form-control shadow-sm" placeholder="Nhập tên kẻ lừa đảo" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">💳 Số tài khoản ngân hàng</label>
+                <input type="text" name="stk_scam" class="form-control shadow-sm" placeholder="Nhập số tài khoản (nếu có)">
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">📞 Số điện thoại</label>
+                <input type="text" name="sdt_scam" class="form-control shadow-sm" placeholder="Nhập số điện thoại (nếu có)">
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">📝 Nội dung tố cáo</label>
+                <textarea name="noi_dung" class="form-control shadow-sm" rows="4" placeholder="Mô tả chi tiết vụ lừa đảo" required></textarea>
+            </div>
+            <div class="mb-3">
+                <label class="form-label fw-bold">📷 Bằng chứng hình ảnh</label>
+                <input type="file" name="images" class="form-control shadow-sm" multiple>
+            </div>
+            <button type="submit" class="btn btn-warning fw-bold w-100">🚀 Gửi tố cáo ngay</button>
+        </form>
+    </div>
+</div>
+{% endblock main_content %}

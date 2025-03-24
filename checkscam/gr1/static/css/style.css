@@ -1,0 +1,33 @@
+/* Tổng thể */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 2px solid #ffc107;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffc107 !important;
+}
+
+/* Main Content */
+main {
+    min-height: 70vh;
+}
+
+/* Footer */
+.footer {
+    font-size: 14px;
+    border-top: 2px solid #ffc107;
+}

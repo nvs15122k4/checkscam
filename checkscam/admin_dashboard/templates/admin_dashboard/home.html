@@ -1,0 +1,13 @@
+{% extends 'admin_dashboard/base.html' %}
+
+{% block dashboard %}
+<h3>📋 Danh sách bài tố cáo</h3>
+<ul>
+    {% for scam in scam_posts %}
+        <li>
+            <strong>{{ scam.name_scam }}</strong> - Trạng thái: {{ scam.status }}
+            <a href="{% url 'scam_result' scam.id %}" class="btn btn-info">🔍 Xem chi tiết</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock dashboard %}
