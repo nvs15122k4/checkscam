@@ -20,11 +20,11 @@ Cài thư viện:
 - MySQL Client: `pip install mysqlclient` → Hỗ trợ kết nối Django với MySQL.
 
 Đồng bộ dữ liệu:
-- `python manage.py migrate`
-- `python manage.py makemigrations`
+- Chạy lệnh:`python manage.py migrate` áp dụng các thay đổi trong cơ sở dữ liệu.
+- Chạy lệnh:`python manage.py makemigrations`
 
 Tạo tài khoản admin:
-- Chạy lệnh `python manage.py createsuperuser`: tạo tài khoàn admin để quản lý Models.
+- Chạy lệnh `python manage.py createsuperuser` tạo tài khoàn admin để quản lý Models.
 
 Chạy dự án:
 - Chạy lệnh: `python manage.py runserver` để chạy dự án.
