@@ -1,6 +1,7 @@
 # checkscam
 v1.9
-Lưu ý: làm từ trên xuống dưới để tránh bị lỗi không mong đợi, cảm ơn.
+
+❗Lưu ý: làm từ trên xuống dưới để tránh bị lỗi không mong đợi, cảm ơn.
 
 DATABASE:
 - tạo SCHEMAS tên là `checkscam` bên MYSQL.
@@ -12,16 +13,16 @@ Cài môi trường ảo
 - Chạy lệnh: `cd checkscam` để mở mục [checkscam].
 
 Cài thư viện:
-- Django: `pip install django` → Framework chính để xây dựng web.  
-- Django REST Framework: `pip install djangorestframework` → Hỗ trợ API REST trong Django.  
-- Google Generative AI: `pip install google-generativeai` → Tích hợp AI của Google.  
-- Pillow: `pip install pillow` → Hỗ trợ xử lý hình ảnh trong Django.
-- Requests: `pip install requests` → Gửi HTTP requests trong Python.
-- MySQL Client: `pip install mysqlclient` → Hỗ trợ kết nối Django với MySQL.
+- Django: `pip install django` Framework chính để xây dựng web.  
+- Django REST Framework: `pip install djangorestframework` Hỗ trợ API REST trong Django.  
+- Google Generative AI: `pip install google-generativeai` Tích hợp AI của Google.  
+- Pillow: `pip install pillow` Hỗ trợ xử lý hình ảnh trong Django.
+- Requests: `pip install requests` Gửi HTTP requests trong Python.
+- MySQL Client: `pip install mysqlclient` Hỗ trợ kết nối Django với MySQL.
 
 Đồng bộ dữ liệu:
 - Chạy lệnh:`python manage.py migrate` áp dụng các thay đổi trong cơ sở dữ liệu.
-- Chạy lệnh:`python manage.py makemigrations`
+- Chạy lệnh:`python manage.py makemigrations` tạo file migration từ các thay đổi trong Models.
 
 Tạo tài khoản admin:
 - Chạy lệnh `python manage.py createsuperuser` tạo tài khoàn admin để quản lý Models.
