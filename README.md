@@ -19,6 +19,7 @@ Cài thư viện:
 - Pillow: `pip install pillow` Hỗ trợ xử lý hình ảnh trong Django.
 - Requests: `pip install requests` Gửi HTTP requests trong Python.
 - MySQL Client: `pip install mysqlclient` Hỗ trợ kết nối Django với MySQL.
+- MySQL`pip install pymysql` Django kết nối với MySQL
 
 Đồng bộ dữ liệu:
 - Chạy lệnh:`python manage.py migrate` áp dụng các thay đổi trong cơ sở dữ liệu.
