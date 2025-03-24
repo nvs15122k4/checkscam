@@ -2,8 +2,13 @@
 v1.9
 
 DATABASE:
-- tạo SCHEMAS tên là `checkscam` bên MYSQL
-- vào `setting` trong folder [checkscam] kéo xuống phần DATABSE để sửa mật khẩu của MYSQL
+- tạo SCHEMAS tên là `checkscam` bên MYSQL.
+- vào `setting` trong folder [checkscam] kéo xuống phần DATABSE để sửa mật khẩu của MYSQL.
+
+Cài môi trường ảo
+- Chạy lệnh: `python -m venv venv`
+- Chạy lệnh: `venv\Scripts\activate`
+- Chạy lệnh: `cd checkscam` để mở mục [checkscam].
 
 Cài thư viện:
 - Django: `pip install django` → Framework chính để xây dựng web.  
@@ -14,10 +19,15 @@ Cài thư viện:
 - MySQL Client: `pip install mysqlclient` → Hỗ trợ kết nối Django với MySQL.
 
 Đồng bộ dữ liệu:
-- python manage.py migrate
-- python manage.py makemigrations
+- `python manage.py migrate`
+- `python manage.py makemigrations`
 
 Tạo tài khoản admin:
 - Chạy lệnh `python manage.py createsuperuser`: tạo tài khoàn admin để quản lý Models.
 
-Chạy dự án: `cd checkscam` 
+Chạy dự án:
+- Chạy lệnh: `python manage.py runserver` để chạy dự án.
+
+Chạy AI Gemini tạo bài viết:
+- Phải đăng nhập tài khoản admin.
+- Vào PostMan chạy 'http://127.0.0.1:8000/fetch-gemini-scams/' với phương thức 'POST' để AI tạo bài viết tự động trên các trang báo.
