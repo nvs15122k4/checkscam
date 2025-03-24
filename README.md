@@ -33,4 +33,4 @@ Chạy dự án:
 
 Chạy AI Gemini tạo bài viết:
 - Phải đăng nhập tài khoản admin.
-- Vào PostMan chạy 'http://127.0.0.1:8000/fetch-gemini-scams/' với phương thức 'POST' để AI tạo bài viết tự động trên các trang báo.
+- Vào PostMan(phải tải app PostMan mới có thể chạy api của Gemini được) chạy 'http://127.0.0.1:8000/fetch-gemini-scams/' với phương thức 'POST' để AI tạo bài viết tự động trên các trang báo.
