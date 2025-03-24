@@ -7,8 +7,8 @@ DATABASE:
 - vào `setting` trong folder [checkscam] kéo xuống phần DATABSE để sửa mật khẩu của MYSQL.
 
 Cài môi trường ảo
-- Chạy lệnh: `python -m venv venv`
-- Chạy lệnh: `venv\Scripts\activate`
+- Chạy lệnh: `python -m venv venv` tạo một môi trường ảo để cô lập các thư viện Python trong dự án.
+- Chạy lệnh: `venv\Scripts\activate` kích hoạt môi trường ảo trên Windows.
 - Chạy lệnh: `cd checkscam` để mở mục [checkscam].
 
 Cài thư viện:
