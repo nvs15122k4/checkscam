@@ -1,5 +1,6 @@
 # checkscam
 v1.9
+Lưu ý: làm từ trên xuống dưới để tránh bị lỗi không mong đợi, cảm ơn.
 
 DATABASE:
 - tạo SCHEMAS tên là `checkscam` bên MYSQL.
