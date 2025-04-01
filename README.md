@@ -1,5 +1,5 @@
 # checkscam
-v1.9
+v2.0
 
 ❗Lưu ý: làm từ trên xuống dưới để tránh bị lỗi không mong đợi, cảm ơn.
 
