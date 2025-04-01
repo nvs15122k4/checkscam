@@ -145,7 +145,6 @@ def fetch_gemini_scams(request):
                         "status": "approved",
                     }
                 )
-
             return JsonResponse({"message": "Dữ liệu lừa đảo Gemini đã được thêm vào!"}, status=200)
 
         except Exception as e:
